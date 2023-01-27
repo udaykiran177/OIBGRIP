@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="18dp"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:text="Time"
+                android:padding="10sp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:maxWidth="250dp"
+                />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:id="@+id/task"
+                android:text="Tasks"
+                android:textSize="15sp"
+                android:maxWidth="100dp"
+                />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="delete"
+            android:drawableRight="@drawable/delete_icon"
+            android:clickable="true"
+             />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
